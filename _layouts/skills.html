@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<div class="page">
+  {% for skill in site.skills %}
+    <article class="post">
+
+      <p>{{ skill.name }}</p>
+    </article>
+  {% endfor %}
+</div>
