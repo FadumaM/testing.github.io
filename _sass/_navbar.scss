@@ -14,7 +14,25 @@
       }
 }
 
-@media screen and(max-width: 640px) {
+@media screen and(min-width: 768px)  {
+  .navbar nav ul{
+      width: 100vw;
+      margin-top: 20px;
+      color: $font-color;
+      display: inline-flex;
+      justify-content: flex-end;
+      float: left;
+        font-family: $helvetica;
+        a{
+          text-decoration: none;
+          color: $font-color;
+          margin: 40px;
+          font-size: 0.7em;
+        }
+  }
+}
+
+@media screen and(max-width: 768px) {
 
   .mobile{
 	width: 100vw;
@@ -63,9 +81,6 @@
   	color: $font-color;
   }
 
-
-
-/* Icon 4 */
 
 .menu-toggle {
   width: 100vw;
