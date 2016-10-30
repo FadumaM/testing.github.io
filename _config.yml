@@ -12,28 +12,6 @@ description: Web Developer from Somewhere
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
 #
-# skills list
-#
-skills:
-  - name: "Html5"
-  - name: "CSS3"
-  - name: "Sass"
-  - name: "Javascript"
-  - name: "jQuery"
-  - name: "AngularJS"
-  - name: "Ruby"
-  - name: "Ruby on Rails"
-  - name: "NodeJS"
-  - name: "Express"
-  - name: "MongoDB"
-  - name: "PostgreSQL"
-  - name: "API"
-  - name: "Mocha"
-  - name: "Chai"
-  - name: "RSpec"
-  - name: "Git"
-  - name: "Github"
-#
 # Flags below are optional
 #
 
