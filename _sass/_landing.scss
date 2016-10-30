@@ -37,3 +37,9 @@
     }
   }
 }
+
+@media screen and(max-width: 640px) {
+  .landing-page .content h1{
+    font-size: 1em;
+  }
+}
