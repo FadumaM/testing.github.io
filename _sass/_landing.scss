@@ -49,6 +49,7 @@
   stroke-width: 15;
   stroke-dasharray: 810;
   stroke-dashoffset: 810;
+  -webkit-animation: offset 8s linear forwards, fill-it 8s 5s forwards;
   animation: offset 8s linear forwards, fill-it 8s 5s forwards;
 }
 .text.visible {
