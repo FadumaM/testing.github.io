@@ -1,0 +1,92 @@
+
+.landing-page{
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to left, rgba(79, 43, 146, 0.63), rgba(26, 9, 161, 0.54)), url(../images/curlscopy.gif);
+  background-size: cover;
+  background-position: 50% 0;
+  overflow: hidden;
+  color: $font-color;
+  .content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1{
+      font-family: Helvetica;
+      font-size: 2em;
+    }
+    .button{
+      background-color: transparent;
+      width: 200px;
+      height: 47px;
+      margin-top: 20px;
+      border: none;
+      font-size: 22px;
+      font-weight: 500;
+      color: $font-color;
+      font-family: 'Rock Salt', cursive;
+      a{
+        text-decoration: none;
+        color: $font-color;
+      }
+    }
+  }
+}
+
+.loader{
+  display: none;
+}
+.logo {
+  stroke: #ffffff;
+  stroke-width: 15;
+  stroke-dasharray: 810;
+  stroke-dashoffset: 810;
+  -webkit-animation: offset 8s linear forwards, fill-it 8s 5s forwards;
+  animation: offset 8s linear forwards, fill-it 8s 5s forwards;
+}
+.text.visible {
+  opacity: 1;
+  display: block;
+}
+
+
+@media screen and(max-width: 640px) {
+  .landing-page .content h1{
+    font-size: 1em;
+  }
+}
+
+
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 5;
+  }
+}
+
+@keyframes fill-it {
+  25% {
+    fill: #ffffff;
+  }
+  50% {
+    fill: #ffffff;
+  }
+  75% {
+    fill: #ffffff;
+    stroke:none;
+  }
+  100% {
+    stroke:none;
+    fill: transparent;
+  }
+}
+
+
+@-webkit-keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}

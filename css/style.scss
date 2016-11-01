@@ -1,21 +1,23 @@
 ---
 ---
 
+@font-face {
+    font-family: 'Permanent Marker';
+    src: url('../font/Permanent_Marker/PermanentMarker.ttf');
+}
+
 //
 // IMPORTS
 //
 
-@import "reset";
-@import "variables";
-@import "navbar";
-@import "landing";
-@import "grid";
-
-
-
-
-
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
-@import "svg-icons";
+@import "standard/reset";
+@import "standard/variables";
+// @import "standard/grid";
+@import "standard/highlights";
+@import "standard/svg-icons";
+@import "pages/navbar";
+@import "pages/landing";
+@import "pages/about";
+@import "pages/project";
+@import "pages/contact";
+@import "pages/footer";

@@ -2,6 +2,11 @@
 layout: default
 ---
 
-<div class="page">
-<h1>The contact Page</h1>
+<div class="contact-page">
+  {% include header.html %}
+  <main>
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  {% include analytics.html %}
 </div>

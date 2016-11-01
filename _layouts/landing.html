@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html>
-    {% include head.html %}
+---
+layout: default
+---
 
-  <body class="body-background">
-
-    <div id="loading" class="container landing-page">
-        {% include header.html %}
-      <main class="content">
-        {{ content }}
-      </main>
-      {% include analytics.html %}
-    </div>
-  </body>
-</html>
+<div id="loading" class="container landing-page">
+    {% include header.html %}
+  <main class="content">
+    {{ content }}
+  </main>
+    {% include analytics.html %}
+</div>

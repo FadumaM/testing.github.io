@@ -2,8 +2,12 @@
 layout: default
 ---
 
-<div class="about">
-  <div class="entry">
-    {{ content }}
-  </div>
+
+<div class="container about-page">
+  {% include header.html %}
+    <main class="content">
+        {{ content }}
+      {% include footer.html %}
+    </main>
+    {% include analytics.html %}
 </div>
