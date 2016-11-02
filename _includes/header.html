@@ -1,5 +1,5 @@
 <header class="navbar">
-
+{% assign current = page.url | downcase | split: '/' %}
   <nav class="mobile mobile-two">
     <div class="header">
       <div class="menu-toggle">
@@ -9,11 +9,11 @@
       </div>
     </div>
     <ul class="mobile-nav">
-      <li><a href="{{ site.baseurl }}/">Home</a></li>
-      <li><a href="{{ site.baseurl }}/about">About</a></li>
-      <li><a href="{{ site.baseurl }}/project">Project</a></li>
-      <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
-      <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
+      <li><a href="{{ site.baseurl }}/" {% if current[1] == site.base-url %}class='active'{% endif %}>Home</a></li>
+      <li><a href="{{ site.baseurl }}/about" {% if current[1] == 'about' %}class='active'{% endif %}>Inspiration</a></li>
+      <li><a href="{{ site.baseurl }}/project" {% if current[1] == 'project' %}class='active'{% endif %}>Project</a></li>
+      <li><a href="{{ site.baseurl }}/blog" {% if current[1] == 'blog' %}class='active'{% endif %}>Blog</a></li>
+      <li><a href="{{ site.baseurl }}/contact" {% if current[1] == 'contact' %}class='active'{% endif %}>Contact</a></li>
     </ul>
   </nav>
 </header>

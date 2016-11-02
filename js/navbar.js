@@ -5,5 +5,4 @@ $(document).ready(function() {
     $(this).toggleClass('open');
     $(this).parent().next(".mobile-nav").toggle(0, "display");
   });
-
 });

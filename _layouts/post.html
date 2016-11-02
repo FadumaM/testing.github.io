@@ -2,16 +2,27 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
+<div class="post-page">
+  {% include header.html %}
+  <main>
 
-  <div class="entry">
-    {{ content }}
-  </div>
+    <article class="post">
+      <h1>{{ page.title }}</h1>
+      <!-- rgb(100, 87, 185) -->
+      <!-- rgba(85, 28, 133, 0.6) -->
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+      <div class="entry">
+        {{ content }}
+      </div>
 
-  {% include disqus.html %}
-</article>
+      <div class="date">
+        Written on {{ page.date | date: "%B %e, %Y" }}
+      </div>
+
+      {% include disqus.html %}
+    </article>
+
+  </main>
+  {% include footer.html %}
+  {% include analytics.html %}
+</div>

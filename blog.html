@@ -4,18 +4,25 @@ title: Blog
 permalink: /blog/
 ---
 
-<div class="posts">
+<div class="feed-grid">
   {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <img class="postPic" src="{{post.image}}" alt="" />
-
-      <div class="entry">
-        {{ post.excerpt }}
+    {% assign loopindex = forloop.index | modulo: 2 %}
+    {% if loopindex == 1 %}
+    <div class="card"> <img src="{{post.image}}" alt="img"/>
+      <div class="info-center">{{post.title}} <button type="button" class="button"><a href="{{ site.baseurl }}{{ post.url }}">View post</a></button></div>
+    </div>
+    {% else %}
+    <div class="card-half wide">
+      <div class="card-img"><span class="label"> <i class="fa fa-star"></i></span><img src="{{post.image}}" alt="img"/></div>
+      <div class="card-text">
+        <h4>{{post.title}}</h4>
+        <p>{{ post.excerpt }}</p>
       </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
+      <ul class="card-tools">
+        <li class="tools-item"><i class="fa fa-heart like"></i><span class="tools-count"><button type="button" name="button">View Post</button></span></li>
+      </ul>
+    </div>
+    {% endif %}
   {% endfor %}
+
 </div>
