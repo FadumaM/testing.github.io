@@ -3,25 +3,25 @@ layout: default
 ---
 
 <div class="post-page">
-  {% include header.html %}
-  <main>
-
-    <article class="post">
+  <div class="post-header" style="background-image: url('{{page.image}}')">
+    {% include header.html %}
+    <div class="title">
       <h1>{{ page.title }}</h1>
+    </div>
+  </div>
+
+  <main>
+    <article class="post">
       <!-- rgb(100, 87, 185) -->
       <!-- rgba(85, 28, 133, 0.6) -->
 
-      <div class="entry">
+      <div class="post-entry">
         {{ content }}
+        <div class="post-date">
+          Written on {{ page.date | date: "%B %e, %Y" }}
+        </div>
       </div>
-
-      <div class="date">
-        Written on {{ page.date | date: "%B %e, %Y" }}
-      </div>
-
-      {% include disqus.html %}
     </article>
-
   </main>
   {% include footer.html %}
   {% include analytics.html %}

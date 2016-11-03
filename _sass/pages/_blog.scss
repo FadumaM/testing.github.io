@@ -26,6 +26,7 @@ body {
   min-height: 100vh;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
+  background: linear-gradient(to left, rgba(79, 43, 146, 0.48), rgba(26, 9, 161, 0.54))
 }
 
 .wrapper {
@@ -190,16 +191,10 @@ input[type="search"] {
      object-fit: cover;
 }
 
-.label {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  color: #fdd701;
-  font-size: 20px;
-}
 
 .card-text {
   padding: 0 20px;
+  margin-bottom: 10px;
 }
 .card-text p {
   margin: 0;
@@ -219,7 +214,6 @@ input[type="search"] {
   display: -ms-flexbox;
   display: flex;
   height: 50px;
-  padding: 15px 20px;
   -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
@@ -240,7 +234,7 @@ input[type="search"] {
 }
 
 .tools-count {
-  padding: 0 5px;
+  padding: 0px 20px;
   color: #888888;
   font-size: 14px;
 }
@@ -279,4 +273,39 @@ input[type="search"] {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+button.button-black {
+  background: transparent;
+  border: 2px solid black;
+  margin-bottom: 15px;
+  font-weight: bold;
+  width: 90px;
+  height: 30px;
+}
+button.button-white {
+  background: transparent;
+  border: 2px solid $font-color;
+  margin-top: 15px;
+  font-weight: bold;
+  width: 90px;
+  height: 30px;
+    a{
+      color: $font-color;
+    }
+}
+
+@media screen and(max-width: 329px) {
+  .card-half {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 7px;
+  }
+
+  .card-img{
+    width: 100%;
+    height: auto;
+  }
+
 }
