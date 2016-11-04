@@ -222,6 +222,21 @@ input[type="search"] {
       -ms-flex-align: end;
           align-items: flex-end;
 }
+.card , .card-img{
+  position: relative;
+}
+
+.card-img:after {
+    content:'';
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: rgba(106, 103, 103, 0.22);
+}
 
 .tools-item {
   margin-right: 20px;
@@ -261,7 +276,7 @@ input[type="search"] {
   padding: 0 10px;
   text-align: center;
   color: white;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(106, 103, 103, 0.22);
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
   font-size: 24px;
   font-weight: bold;
@@ -274,18 +289,23 @@ input[type="search"] {
       -ms-flex-align: center;
           align-items: center;
 }
-
+.info-center:hover, .card-img:hover:after{
+  background: none;
+}
 button.button-black {
   background: transparent;
-  border: 2px solid black;
+  border: 3px solid black;
   margin-bottom: 15px;
   font-weight: bold;
   width: 90px;
   height: 30px;
+  a{
+    color: black;
+  }
 }
 button.button-white {
   background: transparent;
-  border: 2px solid $font-color;
+  border: 3px solid $font-color;
   margin-top: 15px;
   font-weight: bold;
   width: 90px;

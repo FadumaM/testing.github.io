@@ -8,7 +8,7 @@ permalink: /blog/
   {% for post in site.posts %}
     {% assign loopindex = forloop.index | modulo: 2 %}
     {% if loopindex == 1 %}
-    <div class="card"> <img src="{{post.image}}" alt="img"/>
+    <div class="card"> <span class="card-full-image"><img src="{{post.image}}" alt="img"/></span>
       <div class="info-center">{{post.title}} <button type="button" class="button-white"><a href="{{ site.baseurl }}{{ post.url }}">View post</a></button></div>
     </div>
     {% else %}
@@ -20,7 +20,7 @@ permalink: /blog/
         <p>{{ post.excerpt }}</p>
       </div>
       <ul class="card-tools">
-        <li class="tools-item"><span class="tools-count"><button type="button" class="button-black">View Post</button></span></li>
+        <li class="tools-item"><span class="tools-count"><button type="button" class="button-black"><a href="{{ site.baseurl }}{{ post.url }}">View post</a></button></span></li>
       </ul>
     </div>
     {% endif %}

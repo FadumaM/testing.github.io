@@ -9,22 +9,31 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       color: #ffffff;
-      font-size: 2.5em;
+      font-size: 1.5em;
       font-family: 'Suez One', serif;
       letter-spacing: 2px;
       height: 100%;
       text-align: center;
     }
+    span.post-date{
+      text-align: left;
+      font-size: 0.8em;
+      font-family: 'Suez One', serif;
+    }
   }
   main{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
     article{
+      width: 75%;
       .post-entry{
         margin: 60px 15px 0 15px;
         font-size: 1.3em;
-        font-family: helvetica;
+        font-family: 'Roboto Slab', serif;
         color: $font-color;
         p {
           margin: 15px 0 9px 0;

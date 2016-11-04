@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You're up and running number three!
+title: I have a different date!
 image: ../images/post.jpeg
 ---
 
