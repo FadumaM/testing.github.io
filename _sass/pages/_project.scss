@@ -3,7 +3,7 @@
   background-size: cover;
   color: $font-color;
   main{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  height: 80vh;
+  min-height: 80vh;
   align-items: center;
 }
 
@@ -132,4 +132,10 @@ button.button-project {
     a{
       color: $font-color;
     }
+}
+
+.carousel-text {
+    margin: 20px 0 50px 0;
+    font-size: 1em;
+    font-family: 'Suez One', serif;
 }
