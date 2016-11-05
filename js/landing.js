@@ -5,7 +5,7 @@ $(document).ready(function() {
 
   setTimeout(function() {
     $('.loader').css('display', 'none');
-  }, 16000);
+  }, 16500);
 
   var folder = "http://localhost:4000/images/";
 

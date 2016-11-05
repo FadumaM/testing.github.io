@@ -93,37 +93,6 @@ body {
           justify-content: center;
 }
 
-input[type="search"] {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 300px;
-  height: 15px;
-  margin-right: 20px;
-  padding: 10px;
-  border: 1px solid #e6e6e6;
-  border-radius: 5px;
-  outline: none;
-  font-size: 12px;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.categories {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 45px;
-}
-
-.category-item {
-  margin: 0 10px;
-}
-
 .card {
   position: relative;
   width: 320px;

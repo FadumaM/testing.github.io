@@ -39,6 +39,7 @@
 @media screen and(max-width: 768px) {
     .mobile{
   	width: 100vw;
+    min-height: 100px;
   	overflow: hidden;
   	position: relative;
   	display: inline-block;

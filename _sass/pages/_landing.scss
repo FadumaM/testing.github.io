@@ -2,11 +2,9 @@
 .landing-page{
   display: none;
   width: 100vw;
-  height: 100vh;
   background: linear-gradient(to left, rgba(79, 43, 146, 0.63), rgba(26, 9, 161, 0.54)), url(../images/curlscopy.gif);
   background-size: cover;
   background-position: 50% 0;
-  overflow: hidden;
   color: $font-color;
   .content{
     width: 100vw;
@@ -61,10 +59,32 @@
   }
 }
 
+@-webkit-keyframes offset{
+  100% {
+    stroke-dashoffset: 5;
+  }
+}
 
 @keyframes offset {
   100% {
     stroke-dashoffset: 5;
+  }
+}
+
+@-webkit-keyframes fill-it {
+  25% {
+    fill: #ffffff;
+  }
+  50% {
+    fill: #ffffff;
+  }
+  75% {
+    fill: #ffffff;
+    stroke:none;
+  }
+  100% {
+    stroke:none;
+    fill: transparent;
   }
 }
 

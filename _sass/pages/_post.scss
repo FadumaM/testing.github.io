@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100vh;
   .post-header{
-    height: 525px;
+    height: 549px;
     background-size: cover;
     .title{
       width: 100%;
@@ -43,5 +43,16 @@
         }
       }
     }
+  }
+}
+
+@media screen and(max-width: 389px) {
+
+  .post-page .post-header .title{
+    font-size: 1em;
+  }
+
+  .post-page main article .post-entry{
+    font-size: 0.9em;
   }
 }
