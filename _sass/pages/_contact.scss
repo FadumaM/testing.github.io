@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
     h1 {
       font-family: 'Suez One', serif;
@@ -55,12 +55,11 @@
   transition: ease-in-out 0.25s;
 }
 .contact-form textarea {
-  min-height: 50px;
+  min-height: 150px;
   max-height: 500px;
   white-space: pre-wrap;
   word-wrap: break-word;
   resize: vertical;
-  overflow: hidden;
 }
 .contact-form ::-webkit-input-placeholder {
   text-align: center;
@@ -127,7 +126,6 @@
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-radius: 3px;
 }
 .contact-form button:hover {
   background: rgba(65, 22, 190, 0.55);
