@@ -15,9 +15,9 @@ description: Web Developer from Somewhere
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  email: faduma.mohammed@gmail.com
+  email:
   github: FadumaM
-  instagram:
+  codepen: FadumaM
   linkedin: faduma-mohammed
   rss: # just type anything here for a working RSS icon
   twitter: Fad_uma
